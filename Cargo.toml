@@ -1,0 +1,8 @@
+[package]
+name = "web3"
+version = "0.1.0"
+authors = ["Nicolas Huguenin <nichuguen@gmail.com>"]
+
+[dependencies]
+web3 = "*"
+serde_json = "1.0"

@@ -1,0 +1,34 @@
+let address = "0xed6367b2b7e1f0a33cecd2d3b56fc6667a14e4a9"
+let abi = [
+       {
+         "inputs": [],
+         "payable": false,
+         "stateMutability": "nonpayable",
+         "type": "constructor"
+       },
+       {
+         "anonymous": false,
+         "inputs": [
+           {
+             "indexed": false,
+             "name": "truite",
+             "type": "uint32"
+           }
+         ],
+         "name": "TruiteFired",
+         "type": "event"
+       },
+       {
+         "constant": false,
+         "inputs": [],
+         "name": "emitTruite",
+         "outputs": [],
+         "payable": false,
+         "stateMutability": "nonpayable",
+         "type": "function"
+       }
+     ]
+web3.version
+let contract = web3.eth.contract(abi)
+let instance = contract.at(address)
+instance.emitTruite(console.log)
