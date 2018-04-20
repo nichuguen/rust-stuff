@@ -20,6 +20,28 @@
       "type": "event"
     },
     {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
       "constant": false,
       "inputs": [],
       "name": "emitTruite",
@@ -29,20 +51,20 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b7f70b4b6265ee62476ebece2a46e2a1f243f33663fa2bd4ac9b518b44201af9cb8600c604051808263ffffffff16815260200191505060405180910390a160c28061005b6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063241f3ac6146044575b600080fd5b3415604e57600080fd5b60546056565b005b7f70b4b6265ee62476ebece2a46e2a1f243f33663fa2bd4ac9b518b44201af9cb8602a604051808263ffffffff16815260200191505060405180910390a15600a165627a7a72305820bb46c9cb64a8d0ea6a77fed591bf7df7bb2f168c3b8abc5f54b45b19ce99b58d0029",
-  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063241f3ac6146044575b600080fd5b3415604e57600080fd5b60546056565b005b7f70b4b6265ee62476ebece2a46e2a1f243f33663fa2bd4ac9b518b44201af9cb8602a604051808263ffffffff16815260200191505060405180910390a15600a165627a7a72305820bb46c9cb64a8d0ea6a77fed591bf7df7bb2f168c3b8abc5f54b45b19ce99b58d0029",
-  "sourceMap": "26:212:0:-;;;87:66;;;;;;;;131:15;143:2;131:15;;;;;;;;;;;;;;;;;;;;26:212;;;;;;",
-  "deployedSourceMap": "26:212:0:-;;;;;;;;;;;;;;;;;;;;;;;;160:71;;;;;;;;;;;;;;;209:15;221:2;209:15;;;;;;;;;;;;;;;;;;;;160:71::o",
-  "source": "pragma solidity ^0.4.19;\n\ncontract Truite\n{\n    event TruiteFired(uint32 truite);\n\n    function Truite() public\n    {\n        emit TruiteFired(12);\n    }\n\n\n    function emitTruite () public\n    {\n        emit TruiteFired(42);\n    }\n    \n}\n",
+  "bytecode": "0x6060604052341561000f57600080fd5b7f70b4b6265ee62476ebece2a46e2a1f243f33663fa2bd4ac9b518b44201af9cb8600c604051808263ffffffff16815260200191505060405180910390a17fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef3333600c604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1610245806100fc6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063241f3ac614610046575b600080fd5b341561005157600080fd5b61005961005b565b005b7f70b4b6265ee62476ebece2a46e2a1f243f33663fa2bd4ac9b518b44201af9cb8602a604051808263ffffffff16815260200191505060405180910390a17fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef3333602a604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a17f70b4b6265ee62476ebece2a46e2a1f243f33663fa2bd4ac9b518b44201af9cb8602b604051808263ffffffff16815260200191505060405180910390a17fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef3333602b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a15600a165627a7a72305820a6a2daadd683874320012482a302967ffbedc98eb3add08a8ed7d323e29c8a7f0029",
+  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063241f3ac614610046575b600080fd5b341561005157600080fd5b61005961005b565b005b7f70b4b6265ee62476ebece2a46e2a1f243f33663fa2bd4ac9b518b44201af9cb8602a604051808263ffffffff16815260200191505060405180910390a17fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef3333602a604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a17f70b4b6265ee62476ebece2a46e2a1f243f33663fa2bd4ac9b518b44201af9cb8602b604051808263ffffffff16815260200191505060405180910390a17fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef3333602b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a15600a165627a7a72305820a6a2daadd683874320012482a302967ffbedc98eb3add08a8ed7d323e29c8a7f0029",
+  "sourceMap": "26:441:0:-;;;132:117;;;;;;;;176:15;188:2;176:15;;;;;;;;;;;;;;;;;;;;206:36;215:10;227;239:2;206:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;26:441;;;;;;",
+  "deployedSourceMap": "26:441:0:-;;;;;;;;;;;;;;;;;;;;;;;;256:204;;;;;;;;;;;;;;;305:15;317:2;305:15;;;;;;;;;;;;;;;;;;;;335:36;344:10;356;368:2;335:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;386:15;398:2;386:15;;;;;;;;;;;;;;;;;;;;416:36;425:10;437;449:2;416:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;256:204::o",
+  "source": "pragma solidity ^0.4.19;\n\ncontract Truite\n{\n    event TruiteFired(uint32 truite);\n    event Transfer(address,address,uint256);\n\n    function Truite() public\n    {\n        emit TruiteFired(12);\n        emit Transfer(msg.sender, msg.sender, 12);\n    }\n\n\n    function emitTruite () public\n    {\n        emit TruiteFired(42);\n        emit Transfer(msg.sender, msg.sender, 42);\n        emit TruiteFired(43);\n        emit Transfer(msg.sender, msg.sender, 43);\n\n    }\n    \n}\n",
   "sourcePath": "/home/ymaktepi/dev/truelevel/rust/web3/truffle/contracts/Truite.sol",
   "ast": {
     "absolutePath": "/home/ymaktepi/dev/truelevel/rust/web3/truffle/contracts/Truite.sol",
     "exportedSymbols": {
       "Truite": [
-        22
+        58
       ]
     },
-    "id": 23,
+    "id": 59,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -62,9 +84,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 22,
+        "id": 58,
         "linearizedBaseContracts": [
-          22
+          58
         ],
         "name": "Truite",
         "nodeType": "ContractDefinition",
@@ -112,10 +134,106 @@
             "src": "48:33:0"
           },
           {
-            "body": {
+            "anonymous": false,
+            "documentation": null,
+            "id": 13,
+            "name": "Transfer",
+            "nodeType": "EventDefinition",
+            "parameters": {
               "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "101:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "101:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "109:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "117:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "117:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "100:25:0"
+            },
+            "src": "86:40:0"
+          },
+          {
+            "body": {
+              "id": 28,
               "nodeType": "Block",
-              "src": "116:37:0",
+              "src": "161:88:0",
               "statements": [
                 {
                   "eventCall": {
@@ -124,14 +242,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "3132",
-                        "id": 9,
+                        "id": 17,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "143:2:0",
+                        "src": "188:2:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_12_by_1",
@@ -147,18 +265,18 @@
                           "typeString": "int_const 12"
                         }
                       ],
-                      "id": 8,
+                      "id": 16,
                       "name": "TruiteFired",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 5,
-                      "src": "131:11:0",
+                      "src": "176:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint32_$returns$__$",
                         "typeString": "function (uint32)"
                       }
                     },
-                    "id": 10,
+                    "id": 18,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -166,20 +284,145 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "131:15:0",
+                    "src": "176:15:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 11,
+                  "id": 19,
                   "nodeType": "EmitStatement",
-                  "src": "126:20:0"
+                  "src": "171:20:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 21,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "215:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "215:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 23,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "227:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 24,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "227:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3132",
+                        "id": 25,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "239:2:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_12_by_1",
+                          "typeString": "int_const 12"
+                        },
+                        "value": "12"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_12_by_1",
+                          "typeString": "int_const 12"
+                        }
+                      ],
+                      "id": 20,
+                      "name": "Transfer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "206:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256)"
+                      }
+                    },
+                    "id": 26,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "206:36:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27,
+                  "nodeType": "EmitStatement",
+                  "src": "201:41:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 13,
+            "id": 29,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -187,29 +430,29 @@
             "name": "Truite",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6,
+              "id": 14,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "102:2:0"
+              "src": "147:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7,
+              "id": 15,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "116:0:0"
+              "src": "161:0:0"
             },
-            "scope": 22,
-            "src": "87:66:0",
+            "scope": 58,
+            "src": "132:117:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 20,
+              "id": 56,
               "nodeType": "Block",
-              "src": "194:37:0",
+              "src": "290:170:0",
               "statements": [
                 {
                   "eventCall": {
@@ -218,14 +461,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "3432",
-                        "id": 17,
+                        "id": 33,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "221:2:0",
+                        "src": "317:2:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_42_by_1",
@@ -241,18 +484,18 @@
                           "typeString": "int_const 42"
                         }
                       ],
-                      "id": 16,
+                      "id": 32,
                       "name": "TruiteFired",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 5,
-                      "src": "209:11:0",
+                      "src": "305:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint32_$returns$__$",
                         "typeString": "function (uint32)"
                       }
                     },
-                    "id": 18,
+                    "id": 34,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -260,20 +503,329 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "209:15:0",
+                    "src": "305:15:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 19,
+                  "id": 35,
                   "nodeType": "EmitStatement",
-                  "src": "204:20:0"
+                  "src": "300:20:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 37,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "344:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 38,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "344:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 39,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "356:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 40,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "356:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3432",
+                        "id": 41,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "368:2:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        },
+                        "value": "42"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        }
+                      ],
+                      "id": 36,
+                      "name": "Transfer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "335:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256)"
+                      }
+                    },
+                    "id": 42,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "335:36:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 43,
+                  "nodeType": "EmitStatement",
+                  "src": "330:41:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3433",
+                        "id": 45,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "398:2:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_43_by_1",
+                          "typeString": "int_const 43"
+                        },
+                        "value": "43"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_43_by_1",
+                          "typeString": "int_const 43"
+                        }
+                      ],
+                      "id": 44,
+                      "name": "TruiteFired",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "386:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint32_$returns$__$",
+                        "typeString": "function (uint32)"
+                      }
+                    },
+                    "id": 46,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "386:15:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 47,
+                  "nodeType": "EmitStatement",
+                  "src": "381:20:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 49,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "425:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 50,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "425:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 51,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "437:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 52,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "437:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3433",
+                        "id": 53,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "449:2:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_43_by_1",
+                          "typeString": "int_const 43"
+                        },
+                        "value": "43"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_43_by_1",
+                          "typeString": "int_const 43"
+                        }
+                      ],
+                      "id": 48,
+                      "name": "Transfer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "416:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256)"
+                      }
+                    },
+                    "id": 54,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "416:36:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 55,
+                  "nodeType": "EmitStatement",
+                  "src": "411:41:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 21,
+            "id": 57,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -281,39 +833,39 @@
             "name": "emitTruite",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 14,
+              "id": 30,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "180:2:0"
+              "src": "276:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 15,
+              "id": 31,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "194:0:0"
+              "src": "290:0:0"
             },
-            "scope": 22,
-            "src": "160:71:0",
+            "scope": 58,
+            "src": "256:204:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 23,
-        "src": "26:212:0"
+        "scope": 59,
+        "src": "26:441:0"
       }
     ],
-    "src": "0:239:0"
+    "src": "0:468:0"
   },
   "legacyAST": {
     "absolutePath": "/home/ymaktepi/dev/truelevel/rust/web3/truffle/contracts/Truite.sol",
     "exportedSymbols": {
       "Truite": [
-        22
+        58
       ]
     },
-    "id": 23,
+    "id": 59,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -333,9 +885,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 22,
+        "id": 58,
         "linearizedBaseContracts": [
-          22
+          58
         ],
         "name": "Truite",
         "nodeType": "ContractDefinition",
@@ -383,10 +935,106 @@
             "src": "48:33:0"
           },
           {
-            "body": {
+            "anonymous": false,
+            "documentation": null,
+            "id": 13,
+            "name": "Transfer",
+            "nodeType": "EventDefinition",
+            "parameters": {
               "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "101:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "101:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "109:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "117:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "117:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "100:25:0"
+            },
+            "src": "86:40:0"
+          },
+          {
+            "body": {
+              "id": 28,
               "nodeType": "Block",
-              "src": "116:37:0",
+              "src": "161:88:0",
               "statements": [
                 {
                   "eventCall": {
@@ -395,14 +1043,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "3132",
-                        "id": 9,
+                        "id": 17,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "143:2:0",
+                        "src": "188:2:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_12_by_1",
@@ -418,18 +1066,18 @@
                           "typeString": "int_const 12"
                         }
                       ],
-                      "id": 8,
+                      "id": 16,
                       "name": "TruiteFired",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 5,
-                      "src": "131:11:0",
+                      "src": "176:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint32_$returns$__$",
                         "typeString": "function (uint32)"
                       }
                     },
-                    "id": 10,
+                    "id": 18,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -437,20 +1085,145 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "131:15:0",
+                    "src": "176:15:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 11,
+                  "id": 19,
                   "nodeType": "EmitStatement",
-                  "src": "126:20:0"
+                  "src": "171:20:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 21,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "215:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "215:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 23,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "227:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 24,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "227:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3132",
+                        "id": 25,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "239:2:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_12_by_1",
+                          "typeString": "int_const 12"
+                        },
+                        "value": "12"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_12_by_1",
+                          "typeString": "int_const 12"
+                        }
+                      ],
+                      "id": 20,
+                      "name": "Transfer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "206:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256)"
+                      }
+                    },
+                    "id": 26,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "206:36:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27,
+                  "nodeType": "EmitStatement",
+                  "src": "201:41:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 13,
+            "id": 29,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -458,29 +1231,29 @@
             "name": "Truite",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6,
+              "id": 14,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "102:2:0"
+              "src": "147:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7,
+              "id": 15,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "116:0:0"
+              "src": "161:0:0"
             },
-            "scope": 22,
-            "src": "87:66:0",
+            "scope": 58,
+            "src": "132:117:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 20,
+              "id": 56,
               "nodeType": "Block",
-              "src": "194:37:0",
+              "src": "290:170:0",
               "statements": [
                 {
                   "eventCall": {
@@ -489,14 +1262,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "3432",
-                        "id": 17,
+                        "id": 33,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "221:2:0",
+                        "src": "317:2:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_42_by_1",
@@ -512,18 +1285,18 @@
                           "typeString": "int_const 42"
                         }
                       ],
-                      "id": 16,
+                      "id": 32,
                       "name": "TruiteFired",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 5,
-                      "src": "209:11:0",
+                      "src": "305:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint32_$returns$__$",
                         "typeString": "function (uint32)"
                       }
                     },
-                    "id": 18,
+                    "id": 34,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -531,20 +1304,329 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "209:15:0",
+                    "src": "305:15:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 19,
+                  "id": 35,
                   "nodeType": "EmitStatement",
-                  "src": "204:20:0"
+                  "src": "300:20:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 37,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "344:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 38,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "344:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 39,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "356:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 40,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "356:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3432",
+                        "id": 41,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "368:2:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        },
+                        "value": "42"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        }
+                      ],
+                      "id": 36,
+                      "name": "Transfer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "335:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256)"
+                      }
+                    },
+                    "id": 42,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "335:36:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 43,
+                  "nodeType": "EmitStatement",
+                  "src": "330:41:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3433",
+                        "id": 45,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "398:2:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_43_by_1",
+                          "typeString": "int_const 43"
+                        },
+                        "value": "43"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_43_by_1",
+                          "typeString": "int_const 43"
+                        }
+                      ],
+                      "id": 44,
+                      "name": "TruiteFired",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "386:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint32_$returns$__$",
+                        "typeString": "function (uint32)"
+                      }
+                    },
+                    "id": 46,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "386:15:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 47,
+                  "nodeType": "EmitStatement",
+                  "src": "381:20:0"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 49,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "425:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 50,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "425:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 51,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "437:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 52,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "437:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3433",
+                        "id": 53,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "449:2:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_43_by_1",
+                          "typeString": "int_const 43"
+                        },
+                        "value": "43"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_43_by_1",
+                          "typeString": "int_const 43"
+                        }
+                      ],
+                      "id": 48,
+                      "name": "Transfer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "416:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256)"
+                      }
+                    },
+                    "id": 54,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "416:36:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 55,
+                  "nodeType": "EmitStatement",
+                  "src": "411:41:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 21,
+            "id": 57,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -552,30 +1634,30 @@
             "name": "emitTruite",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 14,
+              "id": 30,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "180:2:0"
+              "src": "276:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 15,
+              "id": 31,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "194:0:0"
+              "src": "290:0:0"
             },
-            "scope": 22,
-            "src": "160:71:0",
+            "scope": 58,
+            "src": "256:204:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 23,
-        "src": "26:212:0"
+        "scope": 59,
+        "src": "26:441:0"
       }
     ],
-    "src": "0:239:0"
+    "src": "0:468:0"
   },
   "compiler": {
     "name": "solc",
@@ -591,10 +1673,64 @@
     "1523603162407": {
       "events": {},
       "links": {},
-      "address": "0xed6367b2b7e1f0a33cecd2d3b56fc6667a14e4a9",
-      "transactionHash": "0xc71798cecee75ef9b6810aed8d658ff0e059fcce433dad5bc1c720401f2b4544"
+      "address": "0x6616b8a73e501733498bd838e764d0be41a4ba2a",
+      "transactionHash": "0xf19880fc1094adb7bd71453769a03487e50bbf89b77de6c705a664998e457054"
+    },
+    "1523949124113": {
+      "events": {},
+      "links": {},
+      "address": "0x1bd9b8c0b967fc3635459a3869d789a1bca958b2",
+      "transactionHash": "0x0a6b4463b644ab7e5d466d3c4c56071d2d9051f6a2120ca3c976087c7df2a5e3"
+    },
+    "1523950345804": {
+      "events": {},
+      "links": {},
+      "address": "0x26a30f4884acee3237d43eab7e3d3d70bc3628f5",
+      "transactionHash": "0x21ec6b66d2fd626e2ef4bc44a22dc44025f729f9954b34b3327c162c1ce77fe9"
+    },
+    "1523955967839": {
+      "events": {},
+      "links": {},
+      "address": "0x5bab72b63bf38fa9e155dba7e5bdeebddb94c1e1",
+      "transactionHash": "0x0a6b4463b644ab7e5d466d3c4c56071d2d9051f6a2120ca3c976087c7df2a5e3"
+    },
+    "1523968003191": {
+      "events": {},
+      "links": {},
+      "address": "0x5bab72b63bf38fa9e155dba7e5bdeebddb94c1e1",
+      "transactionHash": "0x787b0779640a70db138f4b1a71e819119f0dba29d30e0aa5046910d59fecc0df"
+    },
+    "1523968656889": {
+      "events": {},
+      "links": {},
+      "address": "0x5bab72b63bf38fa9e155dba7e5bdeebddb94c1e1",
+      "transactionHash": "0x787b0779640a70db138f4b1a71e819119f0dba29d30e0aa5046910d59fecc0df"
+    },
+    "1523972278263": {
+      "events": {},
+      "links": {},
+      "address": "0x5bab72b63bf38fa9e155dba7e5bdeebddb94c1e1",
+      "transactionHash": "0x787b0779640a70db138f4b1a71e819119f0dba29d30e0aa5046910d59fecc0df"
+    },
+    "1524210957861": {
+      "events": {},
+      "links": {},
+      "address": "0x5bab72b63bf38fa9e155dba7e5bdeebddb94c1e1",
+      "transactionHash": "0x787b0779640a70db138f4b1a71e819119f0dba29d30e0aa5046910d59fecc0df"
+    },
+    "1524227688940": {
+      "events": {},
+      "links": {},
+      "address": "0x5bab72b63bf38fa9e155dba7e5bdeebddb94c1e1",
+      "transactionHash": "0xcbcd0657a007f7a3546f2e22403775ba9d0abd729443441dabb6df5f4612f243"
+    },
+    "1524227711861": {
+      "events": {},
+      "links": {},
+      "address": "0x5bab72b63bf38fa9e155dba7e5bdeebddb94c1e1",
+      "transactionHash": "0xcbcd0657a007f7a3546f2e22403775ba9d0abd729443441dabb6df5f4612f243"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-13T07:11:37.712Z"
+  "updatedAt": "2018-04-20T12:35:16.804Z"
 }
